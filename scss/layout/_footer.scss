@@ -4,12 +4,34 @@
     padding-bottom: 22px;
     background-color: $text-alt-color;
     text-align: left;
+    line-height: 26px;
 
     &-logo {
-        a  {
+        a {
             font-family: $title-font;
             font-size: $font-size-big;
             color: $text-light;
+        }
+    }
+
+    &-links {
+        margin-top: 16px;
+
+        a {
+            color: $text-light;
+        }
+    }
+
+    &-links-icon {
+        a {
+            font-weight: 500;
+        }
+
+        i {
+            display: inline-flex;
+            width: 12px;
+            margin-right: 12px;
+            font-size: 13px;
         }
     }
 }

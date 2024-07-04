@@ -195,11 +195,27 @@ a, button {
   padding-bottom: 22px;
   background-color: #353535;
   text-align: left;
+  line-height: 26px;
 }
 .footer-logo a {
   font-family: "Shrikhand", serif;
   font-size: 18px;
   color: #fff;
+}
+.footer-links {
+  margin-top: 16px;
+}
+.footer-links a {
+  color: #fff;
+}
+.footer-links-icon a {
+  font-weight: 500;
+}
+.footer-links-icon i {
+  display: inline-flex;
+  width: 12px;
+  margin-right: 12px;
+  font-size: 13px;
 }
 
 .btn {
