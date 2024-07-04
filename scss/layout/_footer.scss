@@ -1,0 +1,15 @@
+.footer {
+    @extend .d-flex-col;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background-color: $text-alt-color;
+    text-align: left;
+
+    &-logo {
+        a  {
+            font-family: $title-font;
+            font-size: $font-size-big;
+            color: $text-light;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+// --------------------------------------------------
+// Typos
+// --------------------------------------------------
+body {
+	font-family: $text-font;
+	font-size: $font-size-base;
+	color: $text-color;
+	line-height: $line-height-base;
+}
+
+// titres
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+.tt-h1, 
+.tt-h2 {
+	font-size: $font-size-title;
+	font-weight: 700;
+	line-height: 28px;
+}
+
+// paragraphes
+.chapo {
+	font-size: $font-size-big;
+	font-weight: 300;
+	line-height: 21px;
+}
+
+// liens - boutons
+a, button {
+	color: $text-color;
+	text-decoration: none;
+
+	@include lg {
+        transition: all 0.3s;
+    }
+}
+

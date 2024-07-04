@@ -1,0 +1,35 @@
+$text-font: "Roboto", sans-serif;
+$title-font: "Shrikhand", serif;
+
+$font-size-base: 16px;
+$font-size-title: 24px;
+$font-size-small: 15px;
+$font-size-mid: 17px;
+$font-size-big: 18px;
+$font-size-logo: 30px;
+
+$text-color: #000;
+$text-alt-color: #353535;
+$text-light: #fff;
+$logo-color: #101010;
+$bg-color: #F6F6F6;
+$bg-light: #fff;
+$loc-color: #EAEAEA;
+$bg-sticker-color: #99E2D0;
+$text-sticker-color: #008766;
+$btn-top-color: #FF79DA;
+$btn-bot-color: #9356DC;
+
+$line-height-base: 1.428571429;
+
+$main-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+$loc-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+$btn-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+$btn-hover-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+
+
+
+$btn-gradient: linear-gradient(0deg, $btn-bot-color 0%, $btn-top-color 100%);
+$btn-hover-gradient: linear-gradient(0deg, lighten($btn-bot-color, 5%) 0%, lighten($btn-top-color, 5%) 100%);
+
+$max-width: 1440px;

@@ -1,0 +1,25 @@
+.header {
+    background-color: $bg-light;
+
+    &-logo {
+        a {
+            font-family: $title-font;
+            font-size: $font-size-logo;
+            color: $logo-color;
+            line-height: 63px
+        }
+    }
+}
+
+.location {
+    @extend .d-flex-center-center;
+    padding: 0 20px;
+    height: 50px;
+    background-color: $loc-color;
+    box-shadow: $loc-shadow;
+    font-weight: 500;
+
+    i {
+        margin-right: 17px;
+    }
+}

@@ -1,0 +1,240 @@
+body {
+  background-color: #F6F6F6;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img, button {
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+a:focus, input:focus, textarea:focus, select:focus, button:focus {
+  outline: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.box-large {
+  position: relative;
+  width: 100%;
+}
+
+.hidetext {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.d-flex, .d-flex-col, .footer, .d-flex-col-center, .d-flex-center-center, .btn, .location, .d-flex-center {
+  display: flex;
+}
+
+.d-flex-center {
+  align-items: center;
+}
+
+.d-flex-center-center, .btn, .location {
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex-col, .footer, .d-flex-col-center {
+  flex-direction: column;
+}
+
+.d-flex-col-center {
+  align-items: center;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?se81mc");
+  src: url("../fonts/icomoon.eot?se81mc#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?se81mc") format("truetype"), url("../fonts/icomoon.woff?se81mc") format("woff"), url("../fonts/icomoon.svg?se81mc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+}
+
+.icon-food:before {
+  content: "\e901";
+  color: #fff;
+}
+
+.icon-list:before {
+  content: "\e904";
+  color: #7e7e7e;
+}
+
+.icon-loc:before {
+  content: "\e905";
+}
+
+.icon-partner:before {
+  content: "\e906";
+  color: #fff;
+}
+
+.icon-screen:before {
+  content: "\e907";
+  color: #7e7e7e;
+}
+
+.icon-store:before {
+  content: "\e908";
+  color: #9356dc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.428571429;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.tt-h1,
+.tt-h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.chapo {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+a, button {
+  color: #000;
+  text-decoration: none;
+}
+@media (min-width: 1024px) {
+  a, button {
+    transition: all 0.3s;
+  }
+}
+
+.header {
+  background-color: #fff;
+}
+.header-logo a {
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+  color: #101010;
+  line-height: 63px;
+}
+
+.location {
+  padding: 0 20px;
+  height: 50px;
+  background-color: #EAEAEA;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+}
+.location i {
+  margin-right: 17px;
+}
+
+.footer {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: #353535;
+  text-align: left;
+}
+.footer-logo a {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.btn {
+  display: inline-flex;
+  height: 50px;
+  padding: 0 19px;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  border-radius: 25px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+@media (min-width: 1024px) {
+  .btn:hover {
+    background: linear-gradient(0deg, #a16be0 0%, #ff93e1 100%);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+  }
+}
+
+.section-top {
+  padding: 40px 0 57px;
+}
+.section-top .tt-h1 {
+  padding: 0 25px;
+}
+.section-top .chapo {
+  margin-top: 12px;
+}
+.section-top .cta {
+  margin-top: 30px;
+}
+
+.section-steps {
+  padding: 48px 0 68px;
+  background-color: #fff;
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */
