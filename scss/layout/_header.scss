@@ -16,7 +16,7 @@
     padding: 0 20px;
     height: 50px;
     background-color: $loc-color;
-    box-shadow: $loc-shadow;
+    @include card-shadow(4, 0.25);
     font-weight: 500;
 
     i {

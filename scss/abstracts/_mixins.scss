@@ -1,3 +1,14 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass mixins.
-// -----------------------------------------------------------------------------
+@mixin card-shadow($blur: 15, $percent: 0.1) {
+    box-shadow: 0 4px $blur*1px 0 rgba(0, 0, 0, $percent);
+}
+
+@mixin card-sticker($color-bg: $bg-sticker-color, $color-txt: $text-sticker-color) {
+    @extend .d-inl-flex;
+    height: 29px;
+    padding: 0 12px;
+    background-color: $color-bg;
+    border-radius: 2px;
+    font-size: 14px;
+    color: $color-txt;
+    font-weight: 500;
+}

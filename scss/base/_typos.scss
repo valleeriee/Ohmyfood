@@ -10,14 +10,18 @@ body {
 
 // titres
 h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
+	font-weight: 700;
 }
 
 .tt-h1, 
 .tt-h2 {
 	font-size: $font-size-title;
-	font-weight: 700;
 	line-height: 28px;
+}
+
+.tt-h3 {
+	font-size: $font-size-big;
+	line-height: 21px;
 }
 
 // paragraphes
@@ -31,9 +35,6 @@ h1, h2, h3, h4, h5, h6 {
 a, button {
 	color: $text-color;
 	text-decoration: none;
-
-	@include lg {
-        transition: all 0.3s;
-    }
+	transition: all 0.3s;
 }
 

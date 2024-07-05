@@ -1,0 +1,43 @@
+.card {
+    position: relative;
+    background-color: $bg-light;
+    border-radius: 15px;
+    @include card-shadow;
+    overflow: hidden;
+
+    .visuel {
+        height: 46.4vw;
+    }
+
+    .texte {
+        padding: 16px 13px;
+
+        .lieu {
+            margin-top: 5px;
+            font-size: $font-size-mid;
+            font-weight: 300;
+            line-height: 20px;
+        }
+    }
+
+    @at-root #{selector-append('a', &)} {
+        display: block;
+    }
+
+    .list-restaurants & {
+        a::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .fav {
+            position: absolute;
+            bottom: 33px;
+            right: 25px;
+        }
+    }
+}

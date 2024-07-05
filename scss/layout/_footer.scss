@@ -28,10 +28,13 @@
         }
 
         i {
-            display: inline-flex;
             width: 12px;
             margin-right: 12px;
-            font-size: 13px;
+            font-size: 14px;
+
+            &.fa-handshake-angle {
+                font-size: 11px;
+            }
         }
     }
 }

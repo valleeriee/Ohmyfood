@@ -3,15 +3,12 @@ body {
 	text-align: center;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-}
-
-*,
+*, 
 *::before,
 *::after {
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 img, button {
@@ -62,6 +59,10 @@ a:focus, input:focus, textarea:focus, select:focus, button:focus {
 	object-fit: cover;
 }
 
+i {
+	display: inline-flex;
+}
+
 // positionning
 .d-flex {
     display: flex;
@@ -86,4 +87,10 @@ a:focus, input:focus, textarea:focus, select:focus, button:focus {
 .d-flex-col-center {
     @extend .d-flex-col;
     align-items: center;
+}
+
+.d-inl-flex {
+    display: inline-flex;
+	align-items: center;
+    justify-content: center;
 }

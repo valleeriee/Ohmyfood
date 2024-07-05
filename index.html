@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -15,7 +18,7 @@
     <!-- Header -->
 	<header class="header">
         <div class="header-logo"><a href="index.html">ohmyfood</a></div>
-        <div class="location"><i class="icon-loc"></i>Paris, Belleville</div>
+        <div class="location"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</div>
     </header>
 
     <!-- Partie centrale -->
@@ -30,6 +33,78 @@
         <section class="section-steps">
             <div class="container">
                 <h2 class="tt-h2">Fonctionnement</h2>
+                <div class="steps-list">
+                    <div class="step-item step-item-1"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</div>
+                    <div class="step-item step-item-2"><i class="fa-solid fa-list-ul"></i>Composez votre menu</div>
+                    <div class="step-item step-item-3"><i class="fa-solid fa-store"></i>Dégustez au restaurant</div>
+                </div>
+            </div>
+        </section>
+        <section class="section-restaurants">
+            <div class="container">
+                <h2 class="tt-h2">Restaurants</h2>
+                <div class="list-restaurants">
+                    <div class="card">
+                        <div class="visuel"><a href="#"><img src="assets/images/la-palette-du-gout.jpg" alt="Image d'un plat" class="img-cover"></a></div>
+                        <div class="texte">
+                            <h3 class="tt-h3">La palette du goût</h3>
+                            <p class="lieu">Ménilmontant</p>
+                        </div>
+                        <div class="sticker">Nouveau</div>
+                        <label class="fav">
+                            <input type="checkbox" name="favori">
+                            <span class="like">
+                                <span class="lk-off"></span>
+                                <span class="lk-on"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="card">
+                        <div class="visuel"><a href="#"><img src="assets/images/la-note-enchantee.jpg" alt="Image d'un plat" class="img-cover"></a></div>
+                        <div class="texte">
+                            <h3 class="tt-h3">La note enchantée</h3>
+                            <p class="lieu">Charonne</p>
+                        </div>
+                        <div class="sticker">Nouveau</div>
+                        <label class="fav">
+                            <input type="checkbox" name="favori" checked>
+                            <span class="like">
+                                <span class="lk-off"></span>
+                                <span class="lk-on"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="card">
+                        <div class="visuel"><a href="#"><img src="assets/images/a-la-francaise.jpg" alt="Image d'un plat" class="img-cover"></a></div>
+                        <div class="texte">
+                            <h3 class="tt-h3">À la française</h3>
+                            <p class="lieu">Cité Rouge</p>
+                        </div>
+                        <div class="sticker">Nouveau</div>
+                        <label class="fav">
+                            <input type="checkbox" name="favori">
+                            <span class="like">
+                                <span class="lk-off"></span>
+                                <span class="lk-on"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="card">
+                        <div class="visuel"><a href="#"><img src="assets/images/le-delice-des-sens.jpg" alt="Image d'un plat" class="img-cover"></a></div>
+                        <div class="texte">
+                            <h3 class="tt-h3">Le délice des sens</h3>
+                            <p class="lieu">Folie-Méricourt</p>
+                        </div>
+                        <div class="sticker">Nouveau</div>
+                        <label class="fav">
+                            <input type="checkbox" name="favori">
+                            <span class="like">
+                                <span class="lk-off"></span>
+                                <span class="lk-on"></span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -41,8 +116,8 @@
             <ul class="footer-links">
                 <li>
                     <ul class="footer-links-icon">
-                        <li><a href="#"><i class="icon-food"></i>Proposer un restaurant</a></li>
-                        <li><a href="#"><i class="icon-partner"></i>Devenir partenaire</a></li>
+                        <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                        <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
                     </ul>
                 </li>
                 <li>

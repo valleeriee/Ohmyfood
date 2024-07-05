@@ -1,3 +1,4 @@
+// section top
 .section-top {
     padding: 40px 0 57px;
 
@@ -14,8 +15,93 @@
     }
 }
 
+// section fonctionnement
 .section-steps {
     padding: 48px 0 68px;
     background-color: $bg-light;
     text-align: left;
+}
+
+.steps-list {
+    margin-top: 25px;
+    counter-reset: steps-counter;
+
+    .step-item {
+        @extend .d-flex-center;
+        @include card-shadow(15, 0.15);
+        position: relative;
+        height: 72px;
+        margin-left: 13px;
+        padding-left: 34px;
+        background-color: $bg-color;
+        border-radius: 20px;
+        font-weight: 500;
+
+        &:not(:first-child) {
+            margin-top: 25px;
+        }
+
+        &::before {
+            content: counter(steps-counter);
+            counter-increment: steps-counter;
+            @extend .d-flex-center-center;
+            position: absolute;
+            top: 50%;
+            left: -13px;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background-color: $btn-bot-color;
+            border-radius: 24px;
+            font-size: 14px;
+            color: $bg-color;
+            font-weight: 500;
+        }
+
+        i {
+            width: 18px;
+            margin-right: 20px;
+            font-size: 18px;
+            color: $ico-color;
+        }
+
+        &-1 {
+            i {
+                font-size: 20px;
+            }
+        }
+
+        &-2 {
+            i {
+                font-size: 19px;
+            }
+        }
+
+        &-3 {
+            i {
+                color: $btn-bot-color;
+            }
+        }
+    }
+}
+
+// section restaurants
+.section-restaurants {
+    padding: 54px 0 66px;
+    text-align: left;
+
+    .list-restaurants {
+        margin-top: 20px;
+
+        .card + .card {
+            margin-top: 18px;
+        }
+
+        .sticker {
+            @include card-sticker;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+        }
+    }
 }

@@ -1,20 +1,15 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
 .btn {
     @extend .d-flex-center-center;
+    @include card-shadow(10, 0.25);
     display: inline-flex;
 	height: 50px;
     padding: 0 19px;
     background: $btn-gradient;
     border-radius: 25px;
-    box-shadow: $btn-shadow;
     color: $text-light;
 
-    @include lg {
-        &:hover {
-            background: $btn-hover-gradient;
-            box-shadow: $btn-hover-shadow;
-        }
+    &:hover {
+        background: $btn-hover-gradient;
+        @include card-shadow(15, 0.35);
     }
 }
