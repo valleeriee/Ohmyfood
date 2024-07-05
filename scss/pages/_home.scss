@@ -13,6 +13,14 @@
     .cta {
         margin-top: 30px;
     }
+
+    @include md {
+        padding: 30px 0;
+    
+        .chapo {
+            margin-top: 30px;
+        }
+    }
 }
 
 // section fonctionnement
@@ -20,66 +28,93 @@
     padding: 48px 0 68px;
     background-color: $bg-light;
     text-align: left;
-}
 
-.steps-list {
-    margin-top: 25px;
-    counter-reset: steps-counter;
+    .steps-list {
+        margin-top: 25px;
+        counter-reset: steps-counter;
 
-    .step-item {
-        @extend .d-flex-center;
-        @include card-shadow(15, 0.15);
-        position: relative;
-        height: 72px;
-        margin-left: 13px;
-        padding-left: 34px;
-        background-color: $bg-color;
-        border-radius: 20px;
-        font-weight: 500;
-
-        &:not(:first-child) {
-            margin-top: 25px;
-        }
-
-        &::before {
-            content: counter(steps-counter);
-            counter-increment: steps-counter;
-            @extend .d-flex-center-center;
-            position: absolute;
-            top: 50%;
-            left: -13px;
-            transform: translateY(-50%);
-            width: 24px;
-            height: 24px;
-            background-color: $btn-bot-color;
-            border-radius: 24px;
-            font-size: 14px;
-            color: $bg-color;
+        .step-item {
+            @extend .d-flex-center;
+            @include card-shadow(15, 0.15);
+            position: relative;
+            height: 72px;
+            margin-left: 13px;
+            padding-left: 34px;
+            background-color: $bg-color;
+            border-radius: 20px;
             font-weight: 500;
-        }
 
-        i {
-            width: 18px;
-            margin-right: 20px;
-            font-size: 18px;
-            color: $ico-color;
-        }
+            &:not(:first-child) {
+                margin-top: 25px;
+            }
 
-        &-1 {
+            &::before {
+                content: counter(steps-counter);
+                counter-increment: steps-counter;
+                @extend .d-flex-center-center;
+                position: absolute;
+                top: 50%;
+                left: -13px;
+                transform: translateY(-50%);
+                width: 24px;
+                height: 24px;
+                background-color: $btn-bot-color;
+                border-radius: 24px;
+                font-size: 14px;
+                color: $bg-color;
+                font-weight: 500;
+            }
+
             i {
-                font-size: 20px;
+                width: 18px;
+                margin-right: 20px;
+                font-size: 18px;
+                color: $ico-color;
+            }
+
+            &-1 {
+                i {
+                    font-size: 20px;
+                }
+            }
+
+            &-2 {
+                i {
+                    font-size: 19px;
+                }
+            }
+
+            &-3 {
+                i {
+                    color: $btn-bot-color;
+                }
             }
         }
+    }
 
-        &-2 {
-            i {
-                font-size: 19px;
-            }
+    @include md {
+        .container {
+            max-width: 480px;
+        }
+    }
+
+    @include lg {
+        padding: 50px 0;
+
+        .container {
+            max-width: 1160px;
         }
 
-        &-3 {
-            i {
-                color: $btn-bot-color;
+        .steps-list {
+            display: flex;
+
+            .step-item {
+                flex-grow: 1;
+                max-width: 322px;
+    
+                &:not(:first-child) {
+                    margin: 0 0 0 37px;
+                }
             }
         }
     }
@@ -100,8 +135,41 @@
         .sticker {
             @include card-sticker;
             position: absolute;
-            top: 12px;
+            top: 13px;
             right: 12px;
+        }
+    }
+
+    @include md {
+        padding: 30px 0;
+
+        .list-restaurants {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 28px;
+    
+            .card + .card {
+                margin: 0;
+            }
+
+            .card {
+                flex-grow: 1;
+                flex-basis: 0;
+                min-width: 45%;
+                max-width: 490px;
+            }
+    
+            .sticker {
+                right: 17px;
+            }
+        }
+    }
+
+    @include lg {
+        .list-restaurants {
+            gap: 50px;
         }
     }
 }

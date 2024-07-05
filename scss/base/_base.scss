@@ -35,6 +35,15 @@ a:focus, input:focus, textarea:focus, select:focus, button:focus {
 	max-width: $max-width;
 	margin: 0 auto;
 	padding: 0 20px;
+
+	@include md {
+		max-width: 1440px;
+        padding: 0 40px;
+
+		&.smaller {
+			max-width: 1160px;
+		}
+    }
 }
 
 .box-large {
@@ -51,6 +60,7 @@ a:focus, input:focus, textarea:focus, select:focus, button:focus {
 .img-responsive {
 	width: 100%; 
 	height: auto;
+	display: block;
 }
 
 .img-cover {

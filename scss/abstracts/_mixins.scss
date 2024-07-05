@@ -12,3 +12,8 @@
     color: $color-txt;
     font-weight: 500;
 }
+
+@mixin like-size {
+    width: 23px;
+    height: 21px;
+}
