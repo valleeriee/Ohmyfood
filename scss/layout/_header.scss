@@ -1,12 +1,22 @@
 .header {
     background-color: $bg-light;
 
+    &-top {
+        @extend .d-flex-center-center;
+        height: 63px;
+    }
+
     &-logo {
-        a {
-            font-family: $title-font;
-            font-size: $font-size-logo;
-            color: $logo-color;
-            line-height: 63px
+        width: 162px;
+    }
+
+    @include md {
+        &-top {
+            height: 96px;
+        }
+
+        &-logo {
+            width: 200px;
         }
     }
 }
@@ -21,5 +31,9 @@
 
     i {
         margin-right: 17px;
+    }
+
+    @include md {
+        box-shadow: none;
     }
 }

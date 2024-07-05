@@ -38,3 +38,9 @@ a, button {
 	transition: all 0.3s;
 }
 
+@include md {
+	.tt-h1 {
+		font-size: 40px;
+		line-height: 47px;
+	}
+}

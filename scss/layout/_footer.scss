@@ -1,39 +1,92 @@
 .footer {
-    @extend .d-flex-col;
     padding-top: 22px;
     padding-bottom: 22px;
     background-color: $text-alt-color;
     text-align: left;
     line-height: 26px;
+    white-space: nowrap;
+
+    a {
+        color: $text-light;
+    }
 
     &-logo {
         a {
             font-family: $title-font;
             font-size: $font-size-big;
-            color: $text-light;
         }
     }
 
     &-links {
         margin-top: 16px;
 
-        a {
-            color: $text-light;
+        &-icon {
+            a {
+                font-weight: 500;
+            }
+
+            i {
+                width: 12px;
+                margin-right: 12px;
+                font-size: 14px;
+
+                &.fa-handshake-angle {
+                    font-size: 11px;
+                }
+            }
         }
     }
 
-    &-links-icon {
-        a {
-            font-weight: 500;
+    @include md {
+        display: flex;
+        align-items: center;
+        height: 114px;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
         }
 
-        i {
-            width: 12px;
-            margin-right: 12px;
-            font-size: 14px;
+        ul {
+            display: flex;
 
-            &.fa-handshake-angle {
-                font-size: 11px;
+            ul li + li {
+                margin-left: 15px;
+            }
+        }
+
+        &-links {
+            margin-top: 6px;
+
+            &-general {
+                margin-left: 45px;
+            }
+
+            &-icon {
+                order: 2;
+            }
+        }
+    }
+
+    @include lg {
+        align-items: unset;
+        padding-bottom: 30px;
+
+        .container {
+            flex-direction: row-reverse;
+            align-items: self-end;
+        }
+
+        &-links {
+            &-general {
+                margin: 0 90px 0 0;
+            }
+
+            &-icon {
+                margin-right: 45px;
             }
         }
     }

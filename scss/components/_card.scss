@@ -6,7 +6,7 @@
     overflow: hidden;
 
     .visuel {
-        height: 46.4vw;
+        height: 175px;
     }
 
     .texte {
@@ -38,6 +38,13 @@
             position: absolute;
             bottom: 33px;
             right: 25px;
+        }
+    }
+
+    @include md {
+        .texte {
+            padding-right: 19px;
+            padding-left: 19px;
         }
     }
 }
