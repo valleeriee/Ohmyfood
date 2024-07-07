@@ -23,3 +23,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+@mixin animation-mixin($mxn-dur, $mxn-delay: 0) {
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+            animation-delay: $mxn-dur * $i + $mxn-delay;
+        }
+    }
+  }
+  
