@@ -89,6 +89,12 @@ i {
     justify-content: center;
 }
 
+.d-flex-center-btw {
+    @extend .d-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .d-flex-bot {
     @extend .d-flex;
     align-items: flex-end;

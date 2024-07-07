@@ -71,7 +71,7 @@ i {
   display: inline-flex;
 }
 
-.d-flex, .d-flex-col, .d-flex-col-center, .d-flex-bot-btw, .section-menu .menu-part .card, .d-flex-bot, .selection, .d-flex-center-center, .section-steps .steps-list .step-item::before, .selection .check i, .selection .check, .btn, .location, .header-top, .d-flex-center, .section-steps .steps-list .step-item {
+.d-flex, .d-flex-col, .d-flex-col-center, .d-flex-bot-btw, .section-menu .menu-part .card, .d-flex-bot, .selection, .d-flex-center-btw, .section-menu .menu-top, .d-flex-center-center, .section-steps .steps-list .step-item::before, .selection .check i, .selection .check, .btn, .location, .header-top, .d-flex-center, .section-steps .steps-list .step-item {
   display: flex;
 }
 
@@ -82,6 +82,11 @@ i {
 .d-flex-center-center, .section-steps .steps-list .step-item::before, .selection .check i, .selection .check, .btn, .location, .header-top {
   align-items: center;
   justify-content: center;
+}
+
+.d-flex-center-btw, .section-menu .menu-top {
+  align-items: center;
+  justify-content: space-between;
 }
 
 .d-flex-bot, .selection {
@@ -190,8 +195,9 @@ a, button {
 }
 .header .link {
   position: absolute;
-  top: 21px;
+  top: 50%;
   left: 23px;
+  transform: translateY(-50%);
 }
 .header .link-back {
   display: flex;
@@ -617,10 +623,8 @@ a.card {
   border-radius: 40px 40px 0 0;
   text-align: left;
 }
-.section-menu .fav {
-  position: absolute;
-  top: 6px;
-  right: 40px;
+.section-menu .menu-top {
+  padding-right: 23px;
 }
 .section-menu .menu-part {
   padding-top: 27px;
@@ -633,7 +637,7 @@ a.card {
   overflow: hidden;
   transform: translateY(-69px);
   opacity: 0;
-  animation: show-card 1200ms forwards;
+  animation: show-card 1200ms ease-out forwards;
 }
 .section-menu .menu-part .card.show-1:nth-child(1) {
   animation-delay: 400ms;
@@ -644,23 +648,32 @@ a.card {
 .section-menu .menu-part .card.show-1:nth-child(3) {
   animation-delay: 1200ms;
 }
+.section-menu .menu-part .card.show-1:nth-child(4) {
+  animation-delay: 1600ms;
+}
 .section-menu .menu-part .card.show-2:nth-child(1) {
-  animation-delay: 1960ms;
+  animation-delay: 1840ms;
 }
 .section-menu .menu-part .card.show-2:nth-child(2) {
-  animation-delay: 2360ms;
+  animation-delay: 2240ms;
 }
 .section-menu .menu-part .card.show-2:nth-child(3) {
-  animation-delay: 2760ms;
+  animation-delay: 2640ms;
+}
+.section-menu .menu-part .card.show-2:nth-child(4) {
+  animation-delay: 3040ms;
 }
 .section-menu .menu-part .card.show-3:nth-child(1) {
-  animation-delay: 3520ms;
+  animation-delay: 3280ms;
 }
 .section-menu .menu-part .card.show-3:nth-child(2) {
-  animation-delay: 3920ms;
+  animation-delay: 3680ms;
 }
 .section-menu .menu-part .card.show-3:nth-child(3) {
-  animation-delay: 4320ms;
+  animation-delay: 4080ms;
+}
+.section-menu .menu-part .card.show-3:nth-child(4) {
+  animation-delay: 4480ms;
 }
 .section-menu .menu-part .plate {
   flex-grow: 1;
@@ -686,6 +699,32 @@ a.card {
 .section-menu .cta {
   margin-top: 40px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .section-menu .box-bg {
+    width: 73.3%;
+    max-width: 1055px;
+    margin: -40px auto 0;
+    padding-top: 51px;
+  }
+  .section-menu .container {
+    padding: 0 20%;
+  }
+  .section-menu .menu-top {
+    justify-content: center;
+    padding-right: 0;
+  }
+  .section-menu .menu-top .fav {
+    margin-left: 24px;
+  }
+  .section-menu .menu-part {
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-menu .visuel {
+    height: 383px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

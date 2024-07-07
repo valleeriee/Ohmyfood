@@ -9,8 +9,9 @@
 
     .link {
         position: absolute;
-        top: 21px;
+        top: 50%;
         left: 23px;
+        transform: translateY(-50%);
 
         &-back {
             display: flex;
