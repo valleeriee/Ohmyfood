@@ -17,3 +17,9 @@
     width: 23px;
     height: 21px;
 }
+
+@mixin long-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

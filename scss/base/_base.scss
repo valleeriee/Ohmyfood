@@ -89,6 +89,17 @@ i {
     justify-content: center;
 }
 
+.d-flex-bot {
+    @extend .d-flex;
+    align-items: flex-end;
+}
+
+.d-flex-bot-btw {
+    @extend .d-flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
 .d-flex-col {
     @extend .d-flex;
     flex-direction: column;

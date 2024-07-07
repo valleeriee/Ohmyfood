@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+	<header class="header">
+        <div class="header-top">
+            <div class="link"><a href="../index.html" class="link-back"><i class="fa-solid fa-arrow-left"></i><span class="hidetext">Retour</span></a></div>
+            <div class="header-logo"><a href="../index.html"><img src="../assets/images/ohmyfood.png" srcset="../assets/images/ohmyfood@2x.svg 2x" alt="Ohmyfood" class="img-responsive"></a></div> 
+        </div>
+    </header>
+
+    <!-- Partie centrale -->
+	<main class="middle">
+        <section class="section-menu">
+            <div class="visuel"><img src="../assets/images/la-palette-du-gout.jpg" alt="Image d'un plat" class="img-cover"></div>
+            <div class="box-bg">
+                <div class="container">
+                    <h1 class="tt-h1">La palette du goût</h1>
+                    <label class="fav">
+                        <input type="checkbox" name="favori">
+                        <span class="like">
+                            <span class="lk-off"></span>
+                            <span class="lk-on"></span>
+                        </span>
+                    </label>
+                    <article class="menu-part">
+                        <h2 class="tt-h2">Entrées</h2>
+                        <div class="menu-list">
+                            <div class="card">
+                                <div class="plate">
+                                    <h3 class="tt-h3">Fricassée d'escargots</h3>
+                                    <p class="paragraph">Au piment d'Espelette</p>
+                                </div>
+                                <label class="selection" for="entree-1">
+                                    <input type="radio" name="select-entree" id="entree-1">
+                                    <span class="price">25€</span>
+                                    <span class="check"><i class="fa-solid fa-check"></i></span>
+                                </label>
+                            </div>
+                            <div class="card">
+                                <div class="plate">
+                                    <h3 class="tt-h3">Foie gras de canard mi-cuit</h3>
+                                    <p class="paragraph">Et ses copeaux de truffe noire</p>
+                                </div>
+                                <label class="selection" for="entree-2">
+                                    <input type="radio" name="select-entree" id="entree-2">
+                                    <span class="price">35€</span>
+                                    <span class="check"><i class="fa-solid fa-check"></i></span>
+                                </label>
+                            </div>
+                            <div class="card">
+                                <div class="plate">
+                                    <h3 class="tt-h3">Œuf au plat</h3>
+                                    <p class="paragraph">Assaisonné à la truffe sur lit de caviar</p>
+                                </div>
+                                <label class="selection" for="entree-3">
+                                    <input type="radio" name="select-entree" id="entree-3">
+                                    <span class="price">20€</span>
+                                    <span class="check"><i class="fa-solid fa-check"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-part">
+                        <h2 class="tt-h2">Plats</h2>
+                        <div class="menu-list">
+                            <div class="card">
+                                <div class="plate">
+                                    <h3 class="tt-h3">Filet de bœuf aux herbes</h3>
+                                    <p class="paragraph">Accompagné de sa ribambelle de légumes</p>
+                                </div>
+                                <label class="selection" for="plat-1">
+                                    <input type="radio" name="select-plat" id="plat-1">
+                                    <span class="price">40€</span>
+                                    <span class="check"><i class="fa-solid fa-check"></i></span>
+                                </label>
+                            </div>
+                            <div class="card">
+                                <div class="plate">
+                                    <h3 class="tt-h3">Parmentier de queue de bœuf</h3>
+                                    <p class="paragraph">À la truffe noire sur sa purée de panais</p>
+                                </div>
+                                <label class="selection" for="plat-2">
+                                    <input type="radio" name="select-plat" id="plat-2">
+                                    <span class="price">35€</span>
+                                    <span class="check"><i class="fa-solid fa-check"></i></span>
+                                </label>
+                            </div>
+                            <div class="card">
+                                <div class="plate">
+                                    <h3 class="tt-h3">Filet de turbot</h3>
+                                    <p class="paragraph">Aux agrumes</p>
+                                </div>
+                                <label class="selection" for="plat-3">
+                                    <input type="radio" name="select-plat" id="plat-3">
+                                    <span class="price">44€</span>
+                                    <span class="check"><i class="fa-solid fa-check"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-part">
+                        <h2 class="tt-h2">Desserts</h2>
+                        <div class="menu-list">
+                            <div class="card">
+                                <div class="plate">
+                                    <h3 class="tt-h3">Paris-Brest</h3>
+                                    <p class="paragraph">Revisité</p>
+                                </div>
+                                <label class="selection" for="dessert-1">
+                                    <input type="radio" name="select-dessert" id="dessert-1">
+                                    <span class="price">18€</span>
+                                    <span class="check"><i class="fa-solid fa-check"></i></span>
+                                </label>
+                            </div>
+                            <div class="card">
+                                <div class="plate">
+                                    <h3 class="tt-h3">Macaron au chocolat d'exception</h3>
+                                    <p class="paragraph">Et glace à la vanille de Madagascar</p>
+                                </div>
+                                <label class="selection" for="dessert-2">
+                                    <input type="radio" name="select-dessert" id="dessert-2">
+                                    <span class="price">22€</span>
+                                    <span class="check"><i class="fa-solid fa-check"></i></span>
+                                </label>
+                            </div>
+                            <div class="card">
+                                <div class="plate">
+                                    <h3 class="tt-h3">Mousse au chocolat</h3>
+                                    <p class="paragraph">Au piment d'Espelette et à la truffe noire</p>
+                                </div>
+                                <label class="selection" for="dessert-3">
+                                    <input type="radio" name="select-dessert" id="dessert-3">
+                                    <span class="price">23€</span>
+                                    <span class="check"><i class="fa-solid fa-check"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="cta"><a href="#" class="btn btn-large">Commander</a></div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+	<footer class="footer">
+        <div class="container">
+            <div class="footer-logo"><a href="index.html">ohmyfood</a></div>
+            <ul class="footer-links">
+                <li>
+                     <ul class="footer-links-icon">
+                        <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                        <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="footer-links-general">
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="mailto:ohmyfood@gmail.com">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

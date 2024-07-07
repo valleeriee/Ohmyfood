@@ -1,0 +1,51 @@
+.section-menu {
+    .visuel {
+        height: 275px;
+    }
+
+    .box-bg {
+        position: relative;
+        margin-top: -32px;
+        padding: 33px 0 40px;
+        background-color: $bg-color;
+        border-radius: 40px 40px 0 0;
+        text-align: left;
+    }
+
+    .menu-part {
+        padding-top: 40px;
+
+        .card {
+            @extend .d-flex-bot-btw;
+            margin-top: 12px;
+        }
+
+        .plate {
+            flex-grow: 1;
+            padding: 12px 15px;
+            overflow: hidden;
+
+            .tt-h3, 
+            .paragraph {
+                @include long-text;
+            }
+            
+            .paragraph {
+                margin-top: 5px;
+            }
+        }
+
+        .price {
+            padding: 12px 15px;
+            font-size: $font-size-small;
+            color: $text-alt-color;
+            font-weight: 700;
+            line-height: 18px;
+        }
+    }
+
+    .cta {
+        margin-top: 40px;
+        text-align: center;
+    }
+}

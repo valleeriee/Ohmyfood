@@ -8,6 +8,10 @@
     border-radius: 25px;
     color: $text-light;
 
+    &-large {
+        padding: 0 49px;
+    }
+
     &:hover {
         background: $btn-hover-gradient;
         @include card-shadow(15, 0.35);

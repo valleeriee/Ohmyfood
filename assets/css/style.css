@@ -71,7 +71,7 @@ i {
   display: inline-flex;
 }
 
-.d-flex, .d-flex-col, .d-flex-col-center, .d-flex-center-center, .section-steps .steps-list .step-item::before, .btn, .location, .header-top, .d-flex-center, .section-steps .steps-list .step-item {
+.d-flex, .d-flex-col, .d-flex-col-center, .d-flex-bot-btw, .section-menu .menu-part .card, .d-flex-bot, .selection, .d-flex-center-center, .section-steps .steps-list .step-item::before, .selection .check i, .selection .check, .btn, .location, .header-top, .d-flex-center, .section-steps .steps-list .step-item {
   display: flex;
 }
 
@@ -79,9 +79,18 @@ i {
   align-items: center;
 }
 
-.d-flex-center-center, .section-steps .steps-list .step-item::before, .btn, .location, .header-top {
+.d-flex-center-center, .section-steps .steps-list .step-item::before, .selection .check i, .selection .check, .btn, .location, .header-top {
   align-items: center;
   justify-content: center;
+}
+
+.d-flex-bot, .selection {
+  align-items: flex-end;
+}
+
+.d-flex-bot-btw, .section-menu .menu-part .card {
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .d-flex-col, .d-flex-col-center {
@@ -120,6 +129,40 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 21px;
 }
 
+.section-menu .tt-h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.section-menu .tt-h2 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 19px;
+}
+.section-menu .tt-h2::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  margin-top: 6px;
+  background-color: #99E2D0;
+  display: block;
+}
+.section-menu .tt-h3 {
+  font-weight: 500;
+}
+
+.paragraph {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.section-menu .paragraph {
+  font-size: 15px;
+  line-height: 18px;
+}
+
 .chapo {
   font-size: 18px;
   font-weight: 300;
@@ -142,7 +185,18 @@ a, button {
   background-color: #fff;
 }
 .header-top {
+  position: relative;
   height: 63px;
+}
+.header .link {
+  position: absolute;
+  top: 21px;
+  left: 23px;
+}
+.header .link-back {
+  display: flex;
+  font-size: 22px;
+  color: #353535;
 }
 .header-logo {
   width: 162px;
@@ -256,6 +310,9 @@ a, button {
   border-radius: 25px;
   color: #fff;
 }
+.btn-large {
+  padding: 0 49px;
+}
 .btn:hover {
   background: linear-gradient(0deg, #a16be0 0%, #ff93e1 100%);
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
@@ -274,11 +331,8 @@ a, button {
 .card .texte {
   padding: 16px 13px;
 }
-.card .texte .lieu {
+.card .texte .paragraph {
   margin-top: 5px;
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 20px;
 }
 a.card {
   display: block;
@@ -352,6 +406,42 @@ a.card {
 }
 .fav input[type=checkbox]:checked + .like .lk-on, .fav .like input[type=checkbox]:checked + span .lk-on {
   opacity: 1;
+}
+
+.selection {
+  cursor: pointer;
+}
+.selection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+}
+.selection .check {
+  width: 59px;
+  height: 69px;
+  margin-right: -60px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  transition: all 0.3s ease-out;
+}
+.selection .check i {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 15px;
+  color: #99E2D0;
+}
+.selection input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.selection input[type=radio]:checked ~ .check {
+  margin-right: 0;
 }
 
 .section-top {
@@ -501,6 +591,49 @@ a.card {
   .section-restaurants .list-restaurants {
     gap: 50px;
   }
+}
+
+.section-menu .visuel {
+  height: 275px;
+}
+.section-menu .box-bg {
+  position: relative;
+  margin-top: -32px;
+  padding: 33px 0 40px;
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0 0;
+  text-align: left;
+}
+.section-menu .menu-part {
+  padding-top: 40px;
+}
+.section-menu .menu-part .card {
+  margin-top: 12px;
+}
+.section-menu .menu-part .plate {
+  flex-grow: 1;
+  padding: 12px 15px;
+  overflow: hidden;
+}
+.section-menu .menu-part .plate .tt-h3,
+.section-menu .menu-part .plate .paragraph {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section-menu .menu-part .plate .paragraph {
+  margin-top: 5px;
+}
+.section-menu .menu-part .price {
+  padding: 12px 15px;
+  font-size: 15px;
+  color: #353535;
+  font-weight: 700;
+  line-height: 18px;
+}
+.section-menu .cta {
+  margin-top: 40px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+.selection {
+    @extend .d-flex-bot;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+    }
+
+    .check {
+        @extend .d-flex-center-center;
+        width: 59px;
+        height: 69px;
+        margin-right: -60px;
+        background-color: $bg-sticker-color;
+        border-radius: 0 15px 15px 0;
+        transition: all 0.3s ease-out;
+
+        i {
+            @extend .d-flex-center-center;
+            width: 20px;
+            height: 20px;
+            background-color: $bg-light;
+            border-radius: 20px;
+            font-size: $font-size-small;
+            color: $bg-sticker-color;
+        }
+    }
+
+    input[type="radio"] { 
+        position: absolute;
+        opacity: 0;
+
+        &:checked ~ .check {
+            margin-right: 0;
+        }
+    }
+}
