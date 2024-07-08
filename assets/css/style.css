@@ -71,7 +71,7 @@ i {
   display: inline-flex;
 }
 
-.d-flex, .d-flex-col, .d-flex-col-center, .d-flex-bot-btw, .section-menu .menu-part .card, .d-flex-bot, .selection, .d-flex-center-btw, .section-menu .menu-top, .d-flex-center-center, .section-steps .steps-list .step-item::before, .selection .check i, .selection .check, .btn, .location, .header-top, .d-flex-center, .section-steps .steps-list .step-item {
+.d-flex, .d-flex-col, .d-flex-col-center, .d-flex-bot-btw, .section-menu .menu-part .card, .d-flex-bot, .selection, .d-flex-center-btw, .section-menu .menu-top, .d-flex-center-center, .section-steps .steps-list .step-item::before, .overlay .loader, .overlay, .selection .check i, .selection .check, .btn, .location, .header-top, .d-flex-center, .section-steps .steps-list .step-item {
   display: flex;
 }
 
@@ -79,7 +79,7 @@ i {
   align-items: center;
 }
 
-.d-flex-center-center, .section-steps .steps-list .step-item::before, .selection .check i, .selection .check, .btn, .location, .header-top {
+.d-flex-center-center, .section-steps .steps-list .step-item::before, .overlay .loader, .overlay, .selection .check i, .selection .check, .btn, .location, .header-top {
   align-items: center;
   justify-content: center;
 }
@@ -450,6 +450,67 @@ a.card {
   margin-right: 0;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  opacity: 0;
+  animation: show-anim 6s forwards;
+}
+.overlay .loader {
+  gap: 7px;
+}
+.overlay .loader .dot {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  border-radius: 5px;
+  animation: wave 1.5s infinite;
+}
+.overlay .loader .dot:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.overlay .loader .dot:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.overlay .loader .dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.overlay .loader .dot:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.overlay .loader .dot:nth-child(5) {
+  animation-delay: 1s;
+}
+.overlay .loader .dot:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+@keyframes show-anim {
+  0%, 100% {
+    opacity: 0;
+  }
+  1%, 95% {
+    z-index: 100;
+    opacity: 1;
+  }
+}
+@keyframes wave {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translate(-2px, -5px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
 .section-top {
   padding: 40px 0 57px;
 }
@@ -637,43 +698,43 @@ a.card {
   overflow: hidden;
   transform: translateY(-69px);
   opacity: 0;
-  animation: show-card 1200ms ease-out forwards;
+  animation: show-card 900ms ease-out forwards;
 }
 .section-menu .menu-part .card.show-1:nth-child(1) {
-  animation-delay: 400ms;
+  animation-delay: 300ms;
 }
 .section-menu .menu-part .card.show-1:nth-child(2) {
-  animation-delay: 800ms;
+  animation-delay: 600ms;
 }
 .section-menu .menu-part .card.show-1:nth-child(3) {
-  animation-delay: 1200ms;
+  animation-delay: 900ms;
 }
 .section-menu .menu-part .card.show-1:nth-child(4) {
-  animation-delay: 1600ms;
+  animation-delay: 1200ms;
 }
 .section-menu .menu-part .card.show-2:nth-child(1) {
-  animation-delay: 1840ms;
+  animation-delay: 1380ms;
 }
 .section-menu .menu-part .card.show-2:nth-child(2) {
-  animation-delay: 2240ms;
+  animation-delay: 1680ms;
 }
 .section-menu .menu-part .card.show-2:nth-child(3) {
-  animation-delay: 2640ms;
+  animation-delay: 1980ms;
 }
 .section-menu .menu-part .card.show-2:nth-child(4) {
-  animation-delay: 3040ms;
+  animation-delay: 2280ms;
 }
 .section-menu .menu-part .card.show-3:nth-child(1) {
-  animation-delay: 3280ms;
+  animation-delay: 2460ms;
 }
 .section-menu .menu-part .card.show-3:nth-child(2) {
-  animation-delay: 3680ms;
+  animation-delay: 2760ms;
 }
 .section-menu .menu-part .card.show-3:nth-child(3) {
-  animation-delay: 4080ms;
+  animation-delay: 3060ms;
 }
 .section-menu .menu-part .card.show-3:nth-child(4) {
-  animation-delay: 4480ms;
+  animation-delay: 3360ms;
 }
 .section-menu .menu-part .plate {
   flex-grow: 1;

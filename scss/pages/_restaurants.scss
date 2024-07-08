@@ -1,5 +1,5 @@
 $num-cards: 3;
-$anim-dur: 1200ms;
+$anim-dur: 900ms;
 $anim-delay: calc($anim-dur / $num-cards);
 
 @keyframes show-card {
