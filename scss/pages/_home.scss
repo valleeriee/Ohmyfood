@@ -43,6 +43,7 @@
             background-color: $bg-color;
             border-radius: 20px;
             font-weight: 500;
+            cursor: pointer;
 
             & + .step-item {
                 margin-top: 25px;
@@ -84,7 +85,7 @@
                 }
             }
 
-            &-3 {
+            &:hover {
                 i {
                     color: $btn-bot-color;
                 }

@@ -1,6 +1,20 @@
 body {
 	background-color: $bg-color;
 	text-align: center;
+
+	&.pg-index {
+		overflow: hidden;
+		animation: no-scroll 6s forwards;
+	}
+}
+
+@keyframes no-scroll {
+    0%, 99% {
+        overflow: hidden;
+    }
+    100% {
+        overflow: auto;
+    }
 }
 
 *, 

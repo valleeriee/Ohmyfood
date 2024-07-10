@@ -2,7 +2,19 @@ body {
   background-color: #F6F6F6;
   text-align: center;
 }
+body.pg-index {
+  overflow: hidden;
+  animation: no-scroll 6s forwards;
+}
 
+@keyframes no-scroll {
+  0%, 99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
+  }
+}
 *,
 *::before,
 *::after {
@@ -550,6 +562,7 @@ a.card {
   background-color: #F6F6F6;
   border-radius: 20px;
   font-weight: 500;
+  cursor: pointer;
 }
 .section-steps .steps-list .step-item + .step-item {
   margin-top: 25px;
@@ -581,7 +594,7 @@ a.card {
 .section-steps .steps-list .step-item-2 i {
   font-size: 19px;
 }
-.section-steps .steps-list .step-item-3 i {
+.section-steps .steps-list .step-item:hover i {
   color: #9356DC;
 }
 @media (min-width: 768px) {
