@@ -749,6 +749,9 @@ a.card {
 .section-menu .menu-part .card.show-3:nth-child(4) {
   animation-delay: 3360ms;
 }
+.section-menu .menu-part .card:hover .selection .check {
+  margin-right: 0;
+}
 .section-menu .menu-part .plate {
   flex-grow: 1;
   padding: 12px 0 12px 15px;

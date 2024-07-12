@@ -61,6 +61,14 @@ $anim-delay: calc($anim-dur / $num-cards);
             &.show-3 {
                 @include animation-mixin($anim-delay, $anim-dur * 2.4);
             }
+
+            &:hover {
+                .selection {
+                    .check {
+                        margin-right: 0;
+                    }
+                }
+            }
         }
 
         .plate {
